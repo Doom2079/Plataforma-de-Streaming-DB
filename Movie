@@ -2,6 +2,7 @@ Create Table movies (
     id INT PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(255) NOT NULL,
     director VARCHAR(255) NOT NULL,
+    principal actor VARCHAR(255) NOT NULL,
     genre VARCHAR(100),
     year INT CHECK (anio > 1800 AND anio <= YEAR(CURDATE())),
     duration INT CHECK (duracion > 0),
