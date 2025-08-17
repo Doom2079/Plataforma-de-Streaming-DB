@@ -1,0 +1,9 @@
+Create Table peliculas (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(255) NOT NULL,
+    director VARCHAR(255) NOT NULL,
+    genero VARCHAR(100),
+    anio INT CHECK (anio > 1800 AND anio <= YEAR(CURDATE())),
+    duracion INT CHECK (duracion > 0),
+    sinopsis TEXT
+);
